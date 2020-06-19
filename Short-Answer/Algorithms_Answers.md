@@ -24,7 +24,7 @@ def egg_break(floors):
     lowest_floor = 0
     highest_floor = len(floors)-1
     mid = highest_floor - lowest_floor//2
-    while break(mid) == True and break(mid+1) == False:
+    while break(mid) == True or break(mid+1) == False:
         if break(mid) == True and break(mid+1) == True
             highest_floor = mid
             mid = highest_floor - lowest_floor//2
@@ -33,4 +33,5 @@ def egg_break(floors):
             mid = highest_floor - lowest_floor//2
     return(mid)
 
+runime complexity is O(log n) as explained above
 
