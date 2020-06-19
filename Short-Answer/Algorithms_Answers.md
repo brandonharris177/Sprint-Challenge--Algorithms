@@ -14,7 +14,7 @@ c) The runtime complexity of this code is O(n). In recursion the function is cal
 ## Exercise II
 A binary search seems ideal for this type of issue as the number of cracked eggs is minimized since finding something by increment in the worst case senario requires guesses equal to the number of floors while using a biary search only takes a logrithmic amount of time and is thus much quicker. Since we do not know what floor the eggs break on we will need an exertnal function that I will call brerak(f) that takes the floor into account, if the egg is broken it reaturns true else it returns false
 
-def break(mid):
+def break(egg, mid):
     if egg(mid) == "broken"
         return True
     if egg(mid) != "broken"
